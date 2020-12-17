@@ -1,0 +1,26 @@
+@import '../../partials/fonts';
+@import '../../partials/mixin';
+@import '../../partials/variables';
+
+
+.hero-banner{
+    width:auto;
+    height:480px;
+    
+    background-color: lightgray;
+    background-image: url(../../assets/pics/backgorund.png);
+   background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__text{
+        padding-top:2rem; 
+        background-color: $offwhite;
+        padding-bottom: 3rem;
+        text-align: center;
+        @include reg;
+        color:$gold;
+        font-size: 40px;
+        margin-bottom: 0;
+        font-weight: lighter;
+    }
+}

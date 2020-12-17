@@ -1,0 +1,11 @@
+@import '../../partials/fonts';
+@import '../../partials/mixin';
+@import '../../partials/variables';
+
+.list-name{
+    text-align: center;
+    @include reg; 
+    color: $gold;
+    font-size: 40px;
+    margin-bottom: 4rem;
+}

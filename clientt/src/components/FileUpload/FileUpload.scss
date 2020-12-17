@@ -1,0 +1,57 @@
+@import '../../partials/fonts';
+@import '../../partials/mixin';
+@import '../../partials/variables';
+
+label input{
+    height: 0;
+    width: 0;
+    opacity: 0;
+    margin: 2rem 5rem;
+    @include tablet{
+      margin: 2rem 11rem;
+    }
+    @include desktop{
+      margin: 2rem 20rem;
+    }
+    @include ultra{
+      margin: 2rem 21.5rem;
+    }
+  }
+
+.upload-span{ 
+    border: 1px solid  $gold;
+    // background-color:pink;
+    // padding: 1rem;
+    border-radius: 50% ;
+    // margin: 10px auto;
+    // line-height: 30px;
+    width: 50px;
+    height: 50px;
+    color:$gold
+
+}
+.output{
+    height: 30px;
+    font-size: 0.8rem;
+}
+
+.file-body{
+  // body margins
+  // margin: 7rem 15rem;
+  // background: $offwhite;
+  h1{
+    @include semi; 
+    font-size: 20px;
+    text-align: center;
+    margin:1rem;
+    color: $gold;
+    @include desktop{
+      font-size: 30px;
+      @include reg; 
+      padding-top:3rem;  
+    }
+  }
+  @include desktop{
+    font-size: 20px; 
+  }
+}

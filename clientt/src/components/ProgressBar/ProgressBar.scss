@@ -1,0 +1,14 @@
+@import '../../partials/fonts';
+@import '../../partials/mixin';
+@import '../../partials/variables';
+
+.progressBar{
+    width: progress + '%' ;
+    height: 5px ;
+    margin-top: 20px;
+    background-color: $darkblue;
+    color: $black;
+    @include reg; 
+    font-size: 15px;
+
+}

@@ -1,0 +1,15 @@
+@import '../../partials/fonts';
+@import '../../partials/mixin';
+@import '../../partials/variables';
+
+
+.profile__card{
+    margin: 20vw;
+    border: 1px solid transparent;
+    background-color: $darkblue;
+    color: $offwhite;
+}
+
+.logout-body{
+    // background-color: $silver;
+}

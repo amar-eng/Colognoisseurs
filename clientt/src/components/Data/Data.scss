@@ -1,0 +1,53 @@
+@import '../../partials/fonts';
+@import '../../partials/mixin';
+@import '../../partials/variables';
+
+.data{
+    margin: 1rem;
+    @include desktop{
+        margin: 1rem 5rem;
+        font-size: 20px;
+    }
+    &__name{
+        font-size:16px;
+        @include reg; 
+        @include desktop{
+            font-size: 20px;
+        }
+        
+    }
+    &__desc{
+        font-size: 16px;
+        @include desktop{
+            font-size: 18px;
+        }
+        
+    }
+    &__button{
+        
+        background: $gold;
+        color: $darkblue;
+        padding: 0.5rem; 
+        @include reg; 
+        font-size: 10px;
+        border-radius: 30px;
+        width: 20vw;
+        position:fixed;
+        bottom: 0;
+        right: 0;
+        @include tablet{
+            right: 10vw;
+            width: 10vw;
+            bottom: 4vh;
+        }
+        @include desktop{
+            right: 22vw;
+            width: 10vw;
+            bottom: 14vh;
+        }
+        &:focus{
+            outline:none;
+        }
+
+    }
+}

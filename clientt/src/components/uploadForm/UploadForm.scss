@@ -1,0 +1,94 @@
+@import '../../partials/fonts';
+@import '../../partials/mixin';
+@import '../../partials/variables';
+
+
+.upload-forms{
+    margin: 0 1rem;
+    @include tablet{
+        margin: 3rem 6rem 0 6rem;
+    }
+    &__input{
+        opacity: 1;
+        width: 90vw;
+        height: 10vh;
+        @include tablet{
+            width: 70vw;
+        }
+        @include desktop{
+            width: 40vw;
+            margin:1rem;
+        }
+
+
+
+        margin: 1.5rem 0 1rem 0 ;
+        background: $offwhite;
+        padding: 0.5rem 1rem ;
+        @include reg; 
+        border-radius: 18px; 
+        border: 1px solid $black;
+        cursor: pointer;
+        &:hover{
+            border: 2px solid $gold
+        }
+        &:focus {
+            
+            outline:none;
+        }
+
+
+
+    }
+    &__text{
+        height: 143px;
+        border: 1px solid $black;
+        
+        width: 90vw;
+        @include tablet{
+            width: 70vw;
+        }
+        @include desktop{
+            height: 120px;
+            width: 82.5vw;
+            margin-left: 1rem;
+        }
+
+
+        border-radius: 18px;
+        background-color: white;
+        padding: 0.5rem 1rem ;
+        margin-top: 0.5rem;
+        resize: none;
+        @include reg;
+        background: $offwhite;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid $gold; 
+            border-radius: 18px;
+        }
+        &:focus {
+            
+            outline:none;
+        }
+    }
+}
+
+.upload-button{
+    margin: 0 1rem;
+    width: 90vw;
+    background: $darkblue;
+    color: $gold;
+    padding: 0.5rem; 
+    @include reg; 
+    font-size: 18px;
+    border-radius: 30px;
+    @include tablet{
+        margin: 0 25.3rem;
+        width: 30vw;
+    }
+    @include desktop{
+        width: 20vw;
+        margin: 1rem 6.75rem;
+    }
+}
